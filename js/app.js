@@ -24,8 +24,25 @@ function shuffle(array) {
 
     return array;
 }
+// TODO: add Event Listener
+function createCard(className) {
 
+}
 
+// TODO: generate Gameboard
+function generateGameboard() {
+
+}
+
+// TODO: compare cards
+function compareCards(cardA, cardB) {
+
+}
+
+// TODO: end game
+function gameOver() {
+
+}
 /*
  * set up the event listener for a card. If a card is clicked:
  *  - display the card's symbol (put this functionality in another function that you call from this one)
