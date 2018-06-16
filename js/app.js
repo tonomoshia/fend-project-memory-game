@@ -27,10 +27,21 @@ function shuffle(array) {
 }
 //Flip cards and add open and show classes to them
 var allCards = document.querySelectorAll('.card');
+var openCards = [];
 
 allCards.forEach(function (card) {
     card.addEventListener('click', function (e) {
-        card.classList.add('open', 'show');
+        openCards.push(card);
+        card.classList.remove('open', 'show');
+        //allows only two cards to be open at a time
+        if (openCards.length == 2) {
+            setTimeout(function () {
+                openCards.forEach(function(card) {
+                    card.classList.add('open', 'show');
+                });
+                openCards =[];
+            }, 1000);
+        }
     });
 });
 
