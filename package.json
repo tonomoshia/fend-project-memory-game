@@ -12,5 +12,3 @@
       "parcel-bundler": "^1.6.1"
     }
   }
-
-  //from codesandbox.io and added for the sole purpose of being able to work on my project on my iPad when not near my Macbook. codesandbox requires a package.json file and this is their started parcel json package.
