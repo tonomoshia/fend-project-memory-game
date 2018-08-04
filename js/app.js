@@ -1,16 +1,18 @@
 /*
  * Create a list that holds all of your cards
  */
-
+let cards = ['fa-diamond',  'fa-paper-plane-o', 'fa-anchor', 'fa-bolt', 'fa-cube', 'fa-leaf', 'fa-bicycle',  'fa-bomb'];
 
 /*
  * Display the cards on the page
- *   - shuffle the list of cards using the provided "shuffle" method below
- *   - loop through each card and create its HTML
- *   - add each card's HTML to the page
- */
+*/
 
-// Shuffle function from http://stackoverflow.com/a/2450976
+/*
+ *   - shuffle the list of cards using the provided "shuffle" method below
+*/
+
+
+//Shuffle function from http://stackoverflow.com/a/2450976
 function shuffle(array) {
     var currentIndex = array.length,
         temporaryValue, randomIndex;
@@ -25,9 +27,18 @@ function shuffle(array) {
 
     return array;
 }
+
+/*
+ *   - loop through each card and create its HTML
+*/
+
+/*
+ *   - add each card's HTML to the page
+ */
+
 //Flip cards and add open and show classes to them
-var allCards = document.querySelectorAll('.card');
-var openCards = [];
+const allCards = document.querySelectorAll('.card');
+let openCards = [];
 
 allCards.forEach(function (card) {
     card.addEventListener('click', function (e) {
@@ -40,30 +51,11 @@ allCards.forEach(function (card) {
                     card.classList.add('open', 'show');
                 });
                 openCards =[];
-            }, 1000);
+            }, 500);
         }
     });
 });
 
-// TODO: add Event Listener
-function createCard(className) {
-
-}
-
-// TODO: generate Gameboard
-function generateGameboard() {
-
-}
-
-// TODO: compare cards
-function compareCards(cardA, cardB) {
-
-}
-
-// TODO: end game
-function gameOver() {
-
-}
 /*
  * set up the event listener for a card. If a card is clicked:
  *  - display the card's symbol (put this functionality in another function that you call from this one)
