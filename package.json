@@ -1,0 +1,19 @@
+{
+  "name": "memory_game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonomoshia/memory_game.git"
+  },
+  "author": "Elizabeth Reiher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tonomoshia/memory_game/issues"
+  },
+  "homepage": "https://github.com/tonomoshia/memory_game#readme"
+}
