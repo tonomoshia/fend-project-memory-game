@@ -1,18 +1,23 @@
 /*
  * Create a list that holds all of your cards
  */
-var cards = ['fa-diamond', 'fa-diamond',
-    'fa-paper-plane-o', 'fa-paper-plane-o',
-    'fa-anchor', 'fa-anchor',
-    'fa-bolt', 'fa-bolt',
-    'fa-cube', 'fa-cube',
-    'fa-leaf', 'fa-leaf',
-    'fa-bicycle', 'fa-bicycle',
-    'fa-bomb', 'fa-bomb'
+var cards = ['fa fa-diamond', 'fa fa-diamond',
+    'fa fa-paper-plane-o', 'fa fa-paper-plane-o',
+    'fa fa-anchor', 'fa fa-anchor',
+    'fa fa-bolt', 'fa fa-bolt',
+    'fa fa-cube', 'fa fa-cube',
+    'fa fa-leaf', 'fa fa-leaf',
+    'fa fa-bicycle', 'fa fa-bicycle',
+    'fa fa-bomb', 'fa fa-bomb'
 ];
 
 function generateCard(card) {
-    return '<li class="card" data-card="${card}"><i class="fa ${card}"></i></li>';
+    let li = document.createElement('li');
+    li.classList.add('card');
+    let i = document.createElement('i');
+    i.className = card;
+    li.append(i);
+    return li.outerHTML;
 }
 /*
  * Display the cards on the page
